@@ -14,7 +14,6 @@
       justify-content: center;
       align-items: center;
       &__area{
-        // background-color: #d8d8d8;
         color: #ffffff;
         width: 260px;
         height: 20px;
@@ -81,8 +80,6 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        // vertical-align: middle;
-        // text-align: center;
         .text{
           text-decoration: none;
           font-size: 16px;
@@ -126,16 +123,11 @@
         justify-content: space-between;
         height: 50px;        
         width: 100%;
-        // position: relative;
-
         &__comment{
           background-color: white;
           height: 50px;
           width: 100%;
-          // position: absolute;
-          // left: 10px;
           position: relative;
-
           &__text{
             height: 50px;
             width: 100%;
