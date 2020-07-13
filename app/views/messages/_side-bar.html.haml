@@ -1,0 +1,21 @@
+.side-bar
+  .user-name
+    .user-name__area
+      .user-name__area__name
+        Saku
+      .user-name__area__icon
+        = link_to "#", class: "icon-btn-edit" do
+          = icon('far', 'edit', class: "icon-btn")
+          %span<>
+        = link_to "#", class: "icon-btn-cog" do
+          = icon('fas', 'cog', class: "icon-btn")
+          %span<>
+  .group-list
+    .group-list__name
+      TechCamp
+      .group-list__name__message
+        まだメッセージがありません
+    .group-list__name
+      Holiday
+      .group-list__name__message
+        まだメッセージがありません

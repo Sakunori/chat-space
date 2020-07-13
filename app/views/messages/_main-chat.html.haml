@@ -1,0 +1,36 @@
+.main-chat
+
+  .main-chat__group-info
+    .main-chat__group-info__test
+      Test
+      .main-chat__group-info__test__member
+        Member : Saku
+    .main-chat__group-info__edit-icon
+      = link_to 'Edit', "#", class: "text"
+
+  .main-chat__message-list
+
+    .main-chat__message-list__log
+      .main-chat__message-list__log__member
+        Saku
+      .main-chat__message-list__log__time
+        2020/7/11(Sat) 20:56:00
+    .main-chat__message-list__comment
+      おはよう！
+
+    .main-chat__message-list__log
+      .main-chat__message-list__log__member
+        Saku
+      .main-chat__message-list__log__time
+        2020/7/11(Sat) 20:56:00
+    .main-chat__message-list__comment
+      おはよう！
+
+  .main-chat__message-form
+    .main-chat__message-form__input
+      %form.main-chat__message-form__input__comment
+        %input{type: "text", placeholder: "type a message", class: "main-chat__message-form__input__comment__text"}
+        %label{class: "main-chat__message-form__input__comment__img-btn"}
+          = icon('far', 'image')
+          %input{type: "file", class: "main-chat__message-form__input__comment__img-btn__file"}
+      %input{type: "submit", value: "Send", class: "main-chat__message-form__input__send-btn"}
