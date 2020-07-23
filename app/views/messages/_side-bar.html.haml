@@ -4,18 +4,17 @@
       .user-name__area__name
         = current_user.name
       .user-name__area__icon
-        = link_to "#", class: "icon-btn-edit" do
+        = link_to new_group_path, class: "icon-btn-edit" do
           = icon('far', 'edit', class: "icon-btn")
           %span<>
         = link_to edit_user_path(current_user), class: "icon-btn-cog" do
           = icon('fas', 'cog', class: "icon-btn")
           %span<>
   .group-list
-    .group-list__name
-      TechCamp
-      .group-list__name__message
-        まだメッセージがありません
-    .group-list__name
-      Holiday
-      .group-list__name__message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .Group
+        = link_to '#' do
+          .group-list__name
+            = group.name
+          .group-list__name__message
+            メッセージはまだありません
