@@ -4,7 +4,6 @@
 .wrapper {
   height: 100vh;
   display: flex;
-
   .side-bar {
     width: 300px;
     background-color: #253141;
@@ -39,15 +38,15 @@
     }
     .group-list{
       height: calc(100vh - 100px);
-      padding: 20px 20px;
+      padding: 20px 20px 40px 20px;
       color: #ffffff;
       font-weight: bold;
       &__name{
         font-size: 15px;
-        margin-bottom: 40px;
         &__message{
           font-size: 11px;
           margin-top: 5px;
+          margin-bottom: 40px;
         }
       }
     }
@@ -157,5 +156,7 @@
         }
       }
     }
+
   }
+
 }
