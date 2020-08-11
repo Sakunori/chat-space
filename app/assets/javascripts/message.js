@@ -53,7 +53,7 @@ $(function(){
       let html = buildHTML(message)
       $('.MessageField').append(html)
       $('.MessageField').animate({ scrollTop: $('.MessageField')[0].scrollHeight});
-      $('form')[0].reset();
+      $('.main-chat__message-formid')[0].reset();
       $('.main-chat__message-formid__input__send-btn').prop('disabled', false);
     })
     .fail(function(){
