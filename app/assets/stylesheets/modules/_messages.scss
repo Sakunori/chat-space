@@ -93,10 +93,10 @@
       }
     }
 
-    .MessageFeild{
+    .MessageField{
       height: calc( 100vh - 100px - 90px );
       overflow: scroll;
-      .MessageFeild__message-list{
+      .MessageField__message-list{
         &__log{
           padding: 35px 0 0 40px;
           display: flex;
@@ -118,7 +118,7 @@
       }
     }
 
-    &__message-form{
+    &__message-formid{
       height: 90px;
       width: 100%;
       padding: 20px 40px 20px 40px;
@@ -132,6 +132,8 @@
         height: 50px;
         width: 100%;
         &__comment{
+          display: flex;
+          justify-content: space-between;
           background-color: white;
           height: 50px;
           width: 100%;
