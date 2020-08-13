@@ -18,7 +18,8 @@ $(function(){
                     </div>
                   </div>`
                   return html;
-    } else {
+    } 
+    else {
       let html = `<div class="MessageField__message-list" data-message-id=${message.id}>
                     <div class="MessageField__message-list__log">
                       <div class="MessageField__message-list__log__member">
@@ -37,7 +38,7 @@ $(function(){
                   return html;
     }
   }
-  
+
   $('.main-chat__message-formid').on('submit', function(e){
     e.preventDefault();
     let formData = new FormData(this);
