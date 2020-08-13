@@ -1,7 +1,7 @@
 $(function(){
   function buildHTML(message){
     if (message.image) {
-      let html = `<div class="MessageField__message-list">
+      let html = `<div class="MessageField__message-list" data-message-id=${message.id}>
                     <div class="MessageField__message-list__log">
                       <div class="MessageField__message-list__log__member">
                         ${message.user_name}
@@ -19,7 +19,7 @@ $(function(){
                   </div>`
                   return html;
     } else {
-      let html = `<div class="MessageField__message-list">
+      let html = `<div class="MessageField__message-list" data-message-id=${message.id}>
                     <div class="MessageField__message-list__log">
                       <div class="MessageField__message-list__log__member">
                         ${message.user_name}
@@ -37,6 +37,7 @@ $(function(){
                   return html;
     }
   }
+  
   $('.main-chat__message-formid').on('submit', function(e){
     e.preventDefault();
     let formData = new FormData(this);
