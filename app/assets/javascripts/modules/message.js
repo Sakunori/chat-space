@@ -51,8 +51,8 @@ $(function(){
       processData: false,
       contentType: false
     })
-    .done(function(message){
-      let html = buildHTML(message)
+    .done(function(data){
+      let html = buildHTML(data)
       $('.MessageField').append(html)
       $('.MessageField').animate({ scrollTop: $('.MessageField')[0].scrollHeight});
       $('.main-chat__message-formid')[0].reset();
